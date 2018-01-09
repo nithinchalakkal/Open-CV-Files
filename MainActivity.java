@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
 		@Override
 		public void onManagerConnected(int status) {
 			if (status == LoaderCallbackInterface.SUCCESS) {
+				mOpenCvCameraView.enableView();
 
 			} else {
 				super.onManagerConnected(status);
